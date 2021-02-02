@@ -87,17 +87,18 @@ $dischi = [
 
 <body>
 
+    <div id="main">
+        <div class="cards">
+            <?php foreach ($dischi as $disco) { ?>
+                <img src="<?php echo $disco['poster'] ?>">
+                <h3><?php echo $disco['title'] ?></h3>
+                <p><?php echo $disco['author'] ?></p>
+                <p><?php echo $disco['genre'] ?></p>
+                <p><?php echo $disco['year'] ?></p>
+            <?php  } ?>
+        </div>
 
-    <div class="main">
-        <?php foreach ($dischi as $disco) { ?>
-            <img src="<?php echo $disco['poster'] ?>">;
-            <h3><?php echo $disco['title'] ?></h3>
-            <p><?php echo $disco['author'] ?></p>
-            <p><?php echo $disco['genre'] ?></p>
-            <p><?php echo $disco['year'] ?></p>
-        <?php  } ?>
     </div>
-
 
 
 </body>
