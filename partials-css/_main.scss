@@ -1,5 +1,36 @@
-.cards {
+#main {
+    width: 100vw;
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
     img {
         height: 150px;
     }
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.cards-item {
+    width: 200px;
+    height: 300px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background: black;
+    text-align: center;
 }

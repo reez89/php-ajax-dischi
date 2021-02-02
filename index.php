@@ -86,15 +86,21 @@ $dischi = [
 </head>
 
 <body>
-
+    <div id="navbar">
+        <div class="container">
+            <img src="./assets/img/logo.png" alt="">ù
+        </div>
+    </div>
     <div id="main">
-        <div class="cards">
+        <div class="cards container">
             <?php foreach ($dischi as $disco) { ?>
-                <img src="<?php echo $disco['poster'] ?>">
-                <h3><?php echo $disco['title'] ?></h3>
-                <p><?php echo $disco['author'] ?></p>
-                <p><?php echo $disco['genre'] ?></p>
-                <p><?php echo $disco['year'] ?></p>
+                <div class="cards-item">
+                    <img src="<?php echo $disco['poster'] ?>">
+                    <h3><?php echo $disco['title'] ?></h3>
+                    <p><?php echo $disco['author'] ?></p>
+                    <p><?php echo $disco['genre'] ?></p>
+                    <p><?php echo $disco['year'] ?></p>
+                </div>
             <?php  } ?>
         </div>
 
